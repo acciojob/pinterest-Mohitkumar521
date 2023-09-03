@@ -1,1 +1,59 @@
 /*  your css code here. If applicable */
+/* Reset some default styles for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the hero container */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Set your desired background color */
+    height: 400px; /* Adjust the height as needed */
+    position: relative; /* Add this to allow positioning of the button */
+}
+
+/* Style the hero image */
+.hero img {
+    width: 100%; /* Make the image take up the entire container width */
+    height: 100%; /* Make the image take up the entire container height */
+    object-fit: cover; /* Clip and center the image */
+}
+
+/* Style the hero content */
+.hero-content {
+    text-align: center;
+    color: #fff; /* Set the text color to contrast with the background */
+    position: absolute; /* Position the content on top of the image */
+    z-index: 1; /* Ensure content is above the image */
+}
+
+/* Style the heading */
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Style the paragraph */
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Style the "Explore Now" button */
+.explore-button {
+    padding: 10px 20px;
+    background-color: #e60023; /* Set your desired button background color */
+    color: #fff; /* Set button text color */
+    border-radius: 5px;
+    text-decoration: none; /* Remove underlines for links */
+    font-weight: bold;
+}
+
+/* Hover effect for the button */
+.explore-button:hover {
+    background-color: #ff3344; /* Change color on hover */
+}
